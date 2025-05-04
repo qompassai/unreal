@@ -1,0 +1,57 @@
+services:
+  mongodb:
+    image: mongo:7.0.5-jammy
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: horde
+      MONGO_INITDB_ROOT_PASSWORD: dbPass123
+    command: --quiet --logpath /dev/null
+    ports:
+      - "0.0.0.0:27017:27017"  # IPv4 all interfaces
+      - "[::]:27017:27017"     # IPv6 all interfaces
+    volumes:
+      - mongodb:/data/db
+
+  redis:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - "0.0.0.0:30002:30002"  # IPv4 all interfaces
+      - "[::]:30002:30002"     # IPv6 all interfaces
+    command: redis-server --save 60 1 --port 30002 --loglevel warning
+    volumes:
+      - redis:/data
+
+  horde-server:
+    image: ghcr.io/epicgames/horde-server:latest
+    restart: always
+    environment:
+      Horde__HttpPort: 13340
+      Horde__Http2Port: 13342
+      Horde__RedisConnectionConfig: redis:30002
+      Horde__DatabaseConnectionString: mongodb://horde:dbPass123@mongodb:27017/Horde?authSource=admin
+      Horde__AuthMode: "None"
+    ports:
+      - "0.0.0.0:13340:13340"  # IPv4 all interfaces for HTTP/1
+      - "[::]:13340:13340"     # IPv6 all interfaces for HTTP/1
+      - "0.0.0.0:13342:13342"  # IPv4 all interfaces for HTTP/2
+      - "[::]:13342:13342"     # IPv6 all interfaces for HTTP/2
+    volumes:
+      - ./data:/app/Data
+
+  ntp:
+    image: cturra/ntp:latest
+    restart: always
+    ports:
+      - "0.0.0.0:1123:1123/udp"  # IPv4 all interfaces
+      - "[::]:1123:1123/udp"     # IPv6 all interfaces
+    environment:
+      - NTP_SERVERS=time.cloudflare.com
+      - LOG_LEVEL=0
+
+volumes:
+  mongodb:
+    driver: local
+  redis:
+    driver: local
+
