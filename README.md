@@ -1,6 +1,6 @@
-# {{REPO_NAME}}
+<h3> Qompass AI Unreal </h3>
 
-## {{DESCRIPTION}}
+<h2> Qompass AI Unreal Templates </h2>
 
 <p align="center">
   <a href="https://www.gnu.org/licenses/agpl-3.0">
@@ -9,15 +9,7 @@
   <a href="./LICENSE-QCDA">
     <img src="https://img.shields.io/badge/license-Q--CDA-lightgrey.svg" alt="License: Q-CDA">
   </a>
-  {{DOI_BADGE}}
-  <p align="center">
-  {{REPO_VIEW_BADGE}}
 </p>
-</p>
-
-**Tags:** {{KEYWORDS_LIST}}
-
----
 
 <details id="Contact">
   <summary><strong>Contact Qompass AI</strong></summary>
@@ -39,16 +31,12 @@
       <a href="https://orcid.org/{{ORCID_ID}}">
         <img src="https://img.shields.io/badge/ORCID-{{ORCID_ID}}-green?style=flat-square&logo=orcid" alt="ORCID">
       </a>
-      <a href="https://zenodo.org/communities/{{ZENODO_COMMUNITY}}">
+      <a href="https://zenodo.org/communities/qompassai">
         <img src="https://img.shields.io/badge/Zenodo-Publications-blue?style=flat-square&logo=zenodo" alt="Zenodo">
       </a>
     </p>
   </div>
 </details>
 
-<details id="Zenodo DOI">
-  <summary><strong>Digital Object Identifier (DOI)</strong></summary>
 
-```markdown
-{{DOI_MARKDOWN}}
 
