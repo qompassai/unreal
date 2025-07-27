@@ -172,6 +172,10 @@ if [ "$buildsys" = "2" ]; then
 	printf "Choose [1]: "
 	read -r maketgt
 	[ -z "$maketgt" ] && maketgt="1"
+	echo "==> Ensuring ASP.NET Core HTTPS dev certificate is trusted for local development (if required)..."
+dotnet dev-certs https --trust || {
+  echo "❌ Could not trust HTTPS certificate. See https://aka.ms/dev-certs-trust for manual steps."
+}
 	case "$maketgt" in
 	1 | "")
 		echo "==> Building Unreal Editor (Development, StandardSet)..."
@@ -360,8 +364,7 @@ else
 	echo "★ For advanced platform packaging/configuration, confirm in official Unreal documentation."
 	echo
 fi
-exit 0
-</pre>
+exit 0</pre>
 </details>
 <p>Or, <a href="https://github.com/qompassai/unreal/blob/main/scripts/quickstart.sh" target="_blank">View the quickstart script directly</a>.</p>
 </blockquote>

@@ -130,6 +130,10 @@ if [ "$buildsys" = "2" ]; then
 	printf "Choose [1]: "
 	read -r maketgt
 	[ -z "$maketgt" ] && maketgt="1"
+	echo "==> Ensuring ASP.NET Core HTTPS dev certificate is trusted for local development (if required)..."
+	dotnet dev-certs https --trust || {
+		echo "❌ Could not trust HTTPS certificate. See https://aka.ms/dev-certs-trust for manual steps."
+	}
 	case "$maketgt" in
 	1 | "")
 		echo "==> Building Unreal Editor (Development, StandardSet)..."
