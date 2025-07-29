@@ -432,7 +432,7 @@ exit 0</pre>
 </details>
 
 <details>
-<summary style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #ff6b6b; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;"><strong>🔥 How Do I Support</strong></summary>
+<summary style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #ff6b6b; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;"><strong>🤝 How Do I Support</strong></summary>
 <blockquote style="font-size: 1.2em; line-height: 1.8; padding: 25px; background: #fff5f5; border-left: 6px solid #ff6b6b; border-radius: 8px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
 <div align="center">
@@ -520,6 +520,7 @@ For neural networks, the bias term is incorporated before activation:
 $$
 z = \\sum\_{i=1}^{n} w_ix_i + b
 $$
+
 $$
 a = \\sigma(z)
 $$
