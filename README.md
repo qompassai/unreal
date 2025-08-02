@@ -1,6 +1,7 @@
-<!-- /qompassai/unreal/README.md -->
-<!-- ---------------------------- -->
-<!-- Copyright (C) 2025 Qompass AI, All rights reserved. -->
+<!------------/qompassai/unreal/README.md ---------------->
+<!-- ----------Qompass AI on Unreal ---------------------->
+<!-- Copyright (C) 2025 Qompass AI, All rights reserved -->
+<!-------------------------------------------------------->
 
 <h3> Qompass AI on Unreal </h3>
 
@@ -8,6 +9,7 @@
 
 ![Repository Views](https://komarev.com/ghpvc/?username=qompassai-unreal)
 ![GitHub all releases](https://img.shields.io/github/downloads/qompassai/unreal/total?style=flat-square)
+<p align="center">
 <a href="https://www.unrealengine.com/">
   <img src="https://img.shields.io/badge/Unreal_Engine-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white" alt="Unreal Engine">
 </a>
@@ -19,6 +21,10 @@
   <img src="https://img.shields.io/badge/UE_Tutorials-green?style=flat-square" alt="Unreal Engine Tutorials">
 </a>
 <br>
+<a href="https://doi.org/10.5281/zenodo.16170575">
+  <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.16170575.svg" alt="DOI">
+</a>
+
   <a href="https://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg" alt="License: AGPL v3"></a>
   <a href="./LICENSE-QCDA"><img src="https://img.shields.io/badge/license-Q--CDA-lightgrey.svg" alt="License: Q-CDA"></a>
 </p>
@@ -432,7 +438,7 @@ exit 0</pre>
 </details>
 
 <details>
-<summary style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #ff6b6b; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;"><strong>🤝 How Do I Support</strong></summary>
+<summary style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #ff6b6b; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;"><strong>🔥 How Do I Support</strong></summary>
 <blockquote style="font-size: 1.2em; line-height: 1.8; padding: 25px; background: #fff5f5; border-left: 6px solid #ff6b6b; border-radius: 8px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
 <div align="center">
@@ -518,18 +524,17 @@ Where:
 For neural networks, the bias term is incorporated before activation:
 
 $$
-z = \\sum\_{i=1}^{n} w_ix_i + b
+z = \sum_{i=1}^{n} w_ix_i + b
 $$
-
 $$
-a = \\sigma(z)
+a = \sigma(z)
 $$
 
 Where:
 
 - $z$ is the weighted sum plus bias
 - $a$ is the activation output
-- $\\sigma$ is the activation function
+- $\sigma$ is the activation function
 
 ### Attention Mechanism- aka what makes the Transformer (The "T" in ChatGPT) powerful
 
@@ -540,7 +545,7 @@ Where:
 The Attention mechanism equation is:
 
 $$
-\\text{Attention}(Q, K, V) = \\text{softmax}\\left( \\frac{QK^T}{\\sqrt{d_k}} \\right) V
+Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V
 $$
 
 Where:
@@ -549,7 +554,7 @@ Where:
 - $K$ represents the Key matrix
 - $V$ represents the Value matrix
 - $d_k$ is the dimension of the key vectors
-- $\\text{softmax}(\\cdot)$ normalizes scores to sum to 1
+- $\text{softmax}(\cdot)$ normalizes scores to sum to 1
 
 ### Q: Do I have to buy a Linux computer to use this? I don't have time for that!
 
