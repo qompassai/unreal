@@ -5,7 +5,11 @@
   "language": "eng",
   "upload_type": "software",
   "access_right": "open",
+<<<<<<< HEAD
   "version": "v2026-06-04-1-g3faf420-dirty",
+=======
+  "version": "v2026-06-04-1-g3faf420",
+>>>>>>> 5ffbe1bc1da7b5bb64661f9b8ed308ef92931c90
   "publication_date": "2026-06-15",
   "creators": [
     {
