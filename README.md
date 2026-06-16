@@ -1,9 +1,9 @@
 <!------------/qompassai/unreal/README.md ---------------->
 <!-- ----------Qompass AI on Unreal ---------------------->
-<!-- Copyright (C) 2025 Qompass AI, All rights reserved -->
+<!-- Copyright (C) 2026 Qompass AI, All rights reserved -->
 <!-------------------------------------------------------->
 
-<h3> Qompass AI on Unreal </h3>
+<h3> Qompass AI on Unreal Game Engine </h3>
 
 <h2> Qompass AI Unreal Solutions: A more humane UX for AI </h2>
 
